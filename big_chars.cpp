@@ -53,7 +53,7 @@ void print_text(vector<Letter> letters, string text) {
 	vector<string> result;
 
 	string s = "";
-	for(int height=0; height<8; ++height) {
+	for(int height=0; height<letters.at(0).get_height(); ++height) {
 		for(int i=0; i<text.length(); ++i) {
 			Letter l = letters.at((int)text[i]);
 			for(int width=0; width<l.get_width(); ++width) {
